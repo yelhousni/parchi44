@@ -1,0 +1,9 @@
+Parchís.svg
+Author: Víctor Manuel Campos Ramírez (Wikimedia Commons user Uliaoth)
+Source: https://commons.wikimedia.org/wiki/File:Parch%C3%ADs.svg
+Original: https://upload.wikimedia.org/wikipedia/commons/c/cd/Parch%C3%ADs.svg
+License: Creative Commons Attribution-ShareAlike 3.0 Unported
+https://creativecommons.org/licenses/by-sa/3.0/
+
+assets/parchis-original.svg is the unmodified original.
+src/components/board-art.ts contains the visible artwork with the Adobe metadata/wrapper removed and Arial Bold selected for cross-platform rendering, and the eight neutral safe squares shaded gray. The four colored starting squares retain their original colors. The board is rotated at runtime; interactive game pieces and name labels are overlaid. The adapted board artwork is distributed under CC BY-SA 3.0. This attribution does not imply endorsement by the author.
