@@ -1,0 +1,7 @@
+dice.wav: A real recording of a wooden die on a wooden table by Wuzzy.
+Source: https://opengameart.org/content/wooden-dice-on-wodden-table-roll
+Original: Holzwürfel_auf_Holztisch_1.flac (June 14, 2014)
+License: CC0 1.0 Universal — https://creativecommons.org/publicdomain/zero/1.0/
+Converted to mono PCM WAV at 44100 Hz; no synthetic dice sounds added.
+
+turn.wav: Original synthesized notification for Parchi 44.
