@@ -1,0 +1,6 @@
+# Serve the GitHub Pages build on Cloudflare without its repository prefix.
+/parchi44 /index.html 200
+/parchi44/ /index.html 200
+/parchi44/play /play/index.html 200
+/parchi44/play/ /play/index.html 200
+/parchi44/* /:splat 200
