@@ -1,6 +1,4 @@
-# Serve the GitHub Pages build on Cloudflare without its repository prefix.
-/parchi44 /index.html 200
-/parchi44/ /index.html 200
-/parchi44/play /play/index.html 200
-/parchi44/play/ /play/index.html 200
-/parchi44/* /:splat 200
+# Retire the GitHub project prefix on the custom domain; keep old links usable.
+/parchi44 / 301
+/parchi44/ / 301
+/parchi44/* /:splat 301
