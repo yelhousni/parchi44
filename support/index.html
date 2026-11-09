@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="لعبة Parchi بقواعد تطوانية."
+    />
+    <title>Parchi 44</title>
+    <style id="expo-reset">
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        overflow: hidden;
+      }
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <link rel="icon" href="https://parchi44.com/favicon-dove.png"/></head>
+  <body>
+    <noscript>يرجى تفعيل جافاسكريبت لتشغيل اللعبة.</noscript>
+    <div id="root"></div>
+  <script type="application/json" data-app-src="/_expo/static/js/web/__expo-metro-runtime-8c088df87a31e4e6accd81c554ec290d.js"></script><script type="application/json" data-app-src="/_expo/static/js/web/__common-6756c6ab1cd267f4968d19297acac34f.js"></script><script type="application/json" data-app-src="/_expo/static/js/web/entry-4a0b2349570ac731cf53c7d4453eb57e.js"></script>
+<script>(function startWebEntry() {
+  const source = new URL(window.location.href);
+  const prefixed = /^\/parchi44(?:\/|$)/.test(source.pathname);
+  const rootPath = source.pathname.replace(/^\/parchi44(?=\/|$)/, "") || "/";
+  if (source.hostname === "yelhousni.github.io" && prefixed) {
+    const target = new URL("https://parchi44.com/");
+    target.pathname = rootPath;
+    target.search = source.search;
+    target.hash = source.hash;
+    const root = document.getElementById("root");
+    root.innerHTML = `<main data-testid="legacy-domain-notice" style="box-sizing:border-box;width:100%;min-height:100%;padding:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;background:#F6F4EB;color:#214C3C;text-align:center;font-family:Arial,sans-serif;overflow:auto">
+      <div style="display:flex;align-items:center;gap:14px"><img src="https://parchi44.com/favicon-dove.png" alt="حمامة بيضاء" width="64" height="64"><strong dir="ltr" style="font-size:38px">Parchi44</strong></div>
+      <h1 style="font-size:28px;margin:0">انتقلنا إلى موقعنا الجديد</h1>
+      <p style="margin:0">تابع اللعب مع أصدقائك على</p>
+      <strong dir="ltr" style="font-size:32px">parchi44.com</strong>
+      <p style="margin:0">سيتم نقلك تلقائياً خلال 5 ثوانٍ.</p>
+      <span data-testid="redirect-countdown" aria-live="polite" style="font-size:32px">5</span>
+      <a id="legacy-continue" style="padding:14px 36px;border-radius:14px;background:#214C3C;color:white;text-decoration:none;font-size:18px">الانتقال الآن</a>
+    </main>`;
+    document.getElementById("legacy-continue").href = target.href;
+    const deadline = Date.now() + 5000;
+    const countdown = window.setInterval(() => {
+      document.querySelector('[data-testid="redirect-countdown"]').textContent =
+        String(Math.max(0, Math.ceil((deadline - Date.now()) / 1000)));
+    }, 250);
+    window.setTimeout(() => {
+      window.clearInterval(countdown);
+      window.location.replace(target.href);
+    }, 5000);
+    return;
+  }
+  // Also normalize cached/static previews before Expo Router reads the URL.
+  if (
+    ["parchi44.com", "www.parchi44.com"].includes(source.hostname) &&
+    prefixed
+  ) {
+    source.pathname = rootPath;
+    window.history.replaceState(window.history.state, "", source.href);
+  }
+  for (const placeholder of document.querySelectorAll("script[data-app-src]")) {
+    const script = document.createElement("script");
+    script.src = placeholder.dataset.appSrc;
+    // Fetch in parallel but preserve Expo's runtime/common/entry execution order.
+    script.async = false;
+    document.head.appendChild(script);
+  }
+})();</script></body>
+</html>
